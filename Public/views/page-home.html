@@ -1,0 +1,72 @@
+<!-- page-home.html -->
+<div>
+    
+    <div>
+        <h1 class="welcome page-home">WELCOME TO <span>Hired</span></h1>
+
+        <form class='loginForm page-home'><a href='#/login' class="btn btn-primary">Sign in</a>
+            <input type='email' class='email' placeholder='Email'/><br>
+            <input type='password' class='password' placeholder='Password'/><br>
+            <input type="reset" />
+        </form>
+    </div>
+    
+    <video autoplay loop poster="polina.jpg" id="bgvid">
+        <source src="polina.webm" type="video/webm">
+        <source src="polina.mp4" type="video/mp4">
+    </video>
+    
+    
+    
+    <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
+    <!-- WCAG general accessibility recommendation is that media such as background video play through only once.       Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way         created by pressing the "Pause" button  -->
+        <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm">
+        <source src="//demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+    </video>
+
+
+    
+    
+    
+    
+<script>
+        var vid = document.getElementById("bgvid");
+        var pauseButton = document.querySelector("#polina button");
+
+        function vidFade() {
+            vid.classList.add("stopfade");
+        }
+
+        vid.addEventListener('ended', function() {
+            // only functional if "loop" is removed 
+            vid.pause();
+            // to capture IE10
+            vidFade();
+        }); 
+
+
+        pauseButton.addEventListener("click", function() {
+            vid.classList.toggle("stopfade");
+                if (vid.paused) {
+                    vid.play();
+                        pauseButton.innerHTML = "Pause";
+                } else {
+                    vid.pause();
+                    pauseButton.innerHTML = "Paused";
+                }
+        })
+
+</script>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
