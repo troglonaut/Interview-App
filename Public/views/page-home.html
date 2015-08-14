@@ -4,10 +4,13 @@
     <div>
         <h1 class="welcome page-home">WELCOME TO <span>Hired</span></h1>
 
-        <form class='loginForm page-home'><a href='#/login' class="btn btn-primary">Sign in</a>
-            <input type='email' class='email' placeholder='Email'/><br>
-            <input type='password' class='password' placeholder='Password'/><br>
-            <input type="reset" />
+        <form class='loginForm page-home' autocomplete='on'>
+            <a href='#/login' id='inputEmail' class="btn btn-info">Sign in</a>
+            <a href='#/register' class="btn btn-warning">Sign up</a>
+            
+            <input type='email' class='email' placeholder='Email' required autofocus/><br>
+            <input type='password' class='password' placeholder='Password' required/><br>
+            <input type="submit" />
         </form>
     </div>
     
