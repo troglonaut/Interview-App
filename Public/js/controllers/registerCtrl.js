@@ -1,3 +1,3 @@
 app.controller('registerCtrl', function ($scope){
-    $scope.test = "Register";
+    $scope.test = "page-register";
 });

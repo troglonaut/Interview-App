@@ -5,8 +5,8 @@
         <h1 class="welcome page-home">WELCOME TO <span>Hired</span></h1>
 
         <form class='loginForm page-home' autocomplete='on'>
-            <a href='#/login' id='inputEmail' class="btn btn-info">Sign in</a>
-            <a href='#/register' class="btn btn-warning">Sign up</a>
+            <a class="btn btn-info">Sign in</a>
+            <a href="#/register" class="btn btn-warning">Sign up</a>
             
             <input type='email' class='email' placeholder='Email' required autofocus/><br>
             <input type='password' class='password' placeholder='Password' required/><br>
@@ -32,44 +32,35 @@
     
     
     
-<script>
-        var vid = document.getElementById("bgvid");
-        var pauseButton = document.querySelector("#polina button");
+    <script>
+            var vid = document.getElementById("bgvid");
+            var pauseButton = document.querySelector("#polina button");
 
-        function vidFade() {
-            vid.classList.add("stopfade");
-        }
+            function vidFade() {
+                vid.classList.add("stopfade");
+            }
 
-        vid.addEventListener('ended', function() {
-            // only functional if "loop" is removed 
-            vid.pause();
-            // to capture IE10
-            vidFade();
-        }); 
+            vid.addEventListener('ended', function() {
+                // only functional if "loop" is removed 
+                vid.pause();
+                // to capture IE10
+                vidFade();
+            }); 
 
 
-        pauseButton.addEventListener("click", function() {
-            vid.classList.toggle("stopfade");
-                if (vid.paused) {
-                    vid.play();
-                        pauseButton.innerHTML = "Pause";
-                } else {
-                    vid.pause();
-                    pauseButton.innerHTML = "Paused";
-                }
-        })
+            pauseButton.addEventListener("click", function() {
+                vid.classList.toggle("stopfade");
+                    if (vid.paused) {
+                        vid.play();
+                            pauseButton.innerHTML = "Pause";
+                    } else {
+                        vid.pause();
+                        pauseButton.innerHTML = "Paused";
+                    }
+            })
 
-</script>
+    </script>
 </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
 
