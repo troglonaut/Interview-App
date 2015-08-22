@@ -81,8 +81,8 @@ hr {
     margin-top: 1%;
 }
 
+/*
 .langBack {
-    background-color: black;
     display: inline-block;
     margin-left: 1%;
     width: 8%;
@@ -90,13 +90,15 @@ hr {
     height: 100%;
     margin-left: 0%;
     opacity: 0.8;
-    background-color: transparent, black;
+    background-color: transparent;
 }
+*/
 
 .langBar {
     color: #ffffff;
     font-weight: 400;
     list-style-type: none;
+    display: inline-block;
 }
 
 a {
@@ -106,6 +108,7 @@ a {
 .text {
     margin-left: 10%;
     margin-top: 15%;
+    word-spacing: 1%;;
 }
 
 
