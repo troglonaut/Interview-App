@@ -2,7 +2,7 @@ var app = angular.module('hiredApp', ['ngRoute']);
 
 app.config(function ($routeProvider) {
 	$routeProvider
-    .when('/welcome', {
+    .when('/home', {
 		templateUrl: 'views/page-home.html',
 		controller: 'welcomeCtrl',
 	})
@@ -10,23 +10,31 @@ app.config(function ($routeProvider) {
 		templateUrl: 'views/page-dash.html',
 		controller: 'dashCtrl'
 	})
-    .when('/login', {
-		templateUrl: 'views/page-login.html',
-		controller: 'loginCtrl'
+    .when('/html', {
+		templateUrl: 'views/page-html.html',
+//		controller: 'loginCtrl'
 	})
-    .when('/register', {
-		templateUrl: 'views/page-register.html',
-		controller: 'registerCtrl'
+    .when('/css', {
+		templateUrl: 'views/page-css.html',
+//		controller: 'registerCtrl'
 	})
-    .when('/testPage', {
-		templateUrl: 'views/page-test.html',
-		controller: 'testPageCtrl'
+    .when('/javascript', {
+		templateUrl: 'views/page-javascript.html',
+//		controller: 'testPageCtrl'
 	})
-    .when('/result', {
-		templateUrl: 'views/page-result.html',
-		controller: 'result.Ctrl'
+    .when('/angular', {
+		templateUrl: 'views/page-angular.html',
+//		controller: 'result.Ctrl'
+	})
+    .when('/node', {
+		templateUrl: 'views/page-node.html',
+//		controller: 'result.Ctrl'
+	})
+    .when('/mongo', {
+		templateUrl: 'views/page-mongo.html',
+//		controller: 'result.Ctrl'
 	})
     .otherwise({ 
-        redirectTo: '/welcome' 
+        redirectTo: '/home' 
     })
 });
