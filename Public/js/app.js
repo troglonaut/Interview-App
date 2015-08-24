@@ -12,8 +12,12 @@ app.config(function ($routeProvider) {
 	})
     .when('/html', {
 		templateUrl: 'views/page-html.html',
-//		controller: 'loginCtrl'
-	})
+		controller: 'htmlCtrl',
+        resolve: {
+            htmlQuestions: function (questionService) {
+                return questionService.getQuestion('html')
+        }
+	}})
     .when('/css', {
 		templateUrl: 'views/page-css.html',
 //		controller: 'registerCtrl'

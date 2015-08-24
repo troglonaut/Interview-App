@@ -8,6 +8,7 @@ var mongoose = require('mongoose');
 var path = require('path')
 var passport = require('passport');
 var session = require('express-session');
+var questionCtrl = require('./api/controllers/questionsCtrl');
 
 // MongoDB
 mongoose.connect('mongodb://localhost/interviewapp-dev');
@@ -22,15 +23,13 @@ var app = express();
 var port = 3000;
 
 // Middleware
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/Public'));
 
 app.use('/', bodyParser.json());
 app.use('/', cors());
 
 // Routes
-app.get('/html', function (req, res) {
-    res.send('working');
-})
+app.get('/api/:lang', questionCtrl.getQuestion);
 
 // Start server
 app.listen(port, function () {
