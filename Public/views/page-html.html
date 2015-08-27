@@ -1,7 +1,13 @@
-<div class="title">
+<div>
     <h1>Questions</h1>
+    
+    <p> {{ currentQuestion.question }}</p>
+    
 </div>
 
-<ol>
-    <li ng-repeat="question in questions">{{ question }}</li>
-</ol>
+
+<div  ng-repeat="answer in currentQuestion.multipleChoice">    
+    <input type="radio" name="selected" value="index"> {{ answer }}
+</div>
+
+<button type="button">next</button>

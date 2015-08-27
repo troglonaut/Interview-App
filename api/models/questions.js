@@ -8,13 +8,17 @@ var QuestionModel = new mongoose.Schema({
         unique: true
     },
     answer: {
-        type: String
+        type: Number,
+        required: true
         },
+    multipleChoice: [{
+        type: String
+    }],
     language: {
         type: String,
         required: true,
-        enum: ['html', 'css']
-}
+        enum: ['html', 'css', 'javascript', 'mongodb', 'express', 'angularjs', 'nodejs', 'jquery', 'databases', 'git', 'github']
+    }
 });
     
 // Export the model schema.

@@ -10,6 +10,10 @@ app.config(function ($routeProvider) {
 		templateUrl: 'views/page-dash.html',
 		controller: 'dashCtrl'
 	})
+    .when('/register', {
+		templateUrl: 'views/page-register.html',
+		controller: 'registerCtrl'
+	})
     .when('/html', {
 		templateUrl: 'views/page-html.html',
 		controller: 'htmlCtrl',

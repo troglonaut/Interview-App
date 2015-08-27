@@ -7,7 +7,7 @@ module.exports = {
     getQuestion : function  (req, res) {
         console.log('req.params.lang: ',req.params.lang);
         
-        Question.find().exec( function (err, result) {
+        Question.find().select('question multipleChoice').exec( function (err, result) {
             console.log('result: ', result);
             res.send(result);
             

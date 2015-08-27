@@ -32,6 +32,8 @@ video {
 
 /* PAGES (specific colors and styles for each page)
 ============================================================================= */
+
+/* Home Page*/
 .page-home { 
     padding-top:200px;
     position:absolute; 
@@ -48,6 +50,59 @@ span {
     position: absolute;
     margin-top: 10%;
 }
+
+.welcome {
+    right: 4.5%;
+}
+
+.title {
+    position: absolute;
+    left: 32.5%;
+    bottom: 58%;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+#email {
+    width: 13%;
+    position: absolute;
+    right: 55%;
+    height: 20%;
+    top: 80%;
+}
+
+#password {
+    width: 13%;
+    position: absolute;
+    left: 45.5%;
+    height: 20%;
+    top: 80%;
+}
+
+#signInBtn {
+    width: 5%;
+    height: 10.9%;
+    margin-left: 25%;
+/*    position: absolute;*/
+    top: 80%;
+}
+
+/*
+#title {
+    color: black;
+    right: 50%;
+    font-size: 1.5em;
+    bottom: 5%;
+}
+*/
+
+.registerLink {
+    position: absolute;
+    bottom: 45%;
+    left: 60%;
+    color: yellow;
+}
+
 
 /*
 register page
@@ -112,11 +167,5 @@ a {
 }
 
 /*html question page*/
-.title {
-    text-align: center;
-}
-
-
-
 
 
