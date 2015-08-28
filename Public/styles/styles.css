@@ -81,7 +81,7 @@ span {
 
 #signInBtn {
     width: 5%;
-    height: 10.9%;
+    height: 60px;
     margin-left: 25%;
 /*    position: absolute;*/
     top: 80%;
@@ -98,7 +98,7 @@ span {
 
 .registerLink {
     position: absolute;
-    bottom: 45%;
+    bottom: 40%;
     left: 60%;
     color: yellow;
 }
@@ -132,57 +132,113 @@ input {
     top: 23%;
     width: 13%;
     height: 5%;
+    left: 45%;
 }
 
 .emailBox {
     top: 38%;
     width: 13%;
     height: 5%;
-    
+    left: 45%;
+}
+
+.regiTitle {
+    text-align: center;
 }
 
 .passwordBox {
     top: 55%;
     width: 13%;
-    height: 5%;
-    
-    
+    height: 5%; 
+    left: 45%;
 }
 
 .regiButton {
     margin-top: 10%;
+    margin-left: 43%;
 }
 
 .boxName {
     position: absolute;
     top: 20%;
+    left: 45%;
 }
 
 .boxEmail {
     margin-top: 10%;
+    margin-left: 43%;
 }
 
 .boxPass {
     margin-top: 7.5%;
+    margin-left: 43%;
 }
 
 .backBtn {
     position: absolute;
-    left: 4%;
+    left: 45.5%;
     margin-top: 15%;
     color: blue;
+    
 }
+
 
 
 
 
 /*Dashboard page*/
+.hiredDash {
+    font-size: 1.5em;
+    position: absolute;
+    top: 2%;
+    margin-left: 2%;
+}
+
 .navBar {
     text-align: right;
     list-style-type: none;
     margin-right: 1%;
     margin-top: 1%;
 }
+
+.signOut {
+    font-size: 1.3em;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+.lang {
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 3%;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    height: 1px;
+    background: #000;
+    opacity: 0.2;
+}
+
+.images {
+    width: 100%;
+	min-width: 695px;
+	height: 180px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    margin-left: 7%;
+}
+
+.width {
+    width: 30%;
+    justify-content: flex-end;
+    padding: 5%;
+    left: 5%;
+}
+
 
 /*
 .langBack {
@@ -197,6 +253,7 @@ input {
 }
 */
 
+/*
 .langBar {
     color: #ffffff;
     font-weight: 400;
@@ -204,19 +261,17 @@ input {
     display: inline-block;
 }
 
-a {
-    color: orange;
-}
-
 .text {
     margin-left: 10%;
     margin-top: 15%;
     word-spacing: 1%;;
 }
+*/
 
-/*html question page*/
+/*HTML QUESTION PAGE*/
 .this {
     color: transparent;
 }
+/*END OF HTML QUESTION PAGE*/
 
 

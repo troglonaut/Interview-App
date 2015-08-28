@@ -32,19 +32,43 @@ app.config(function ($routeProvider) {
 	}})
     .when('/javascript', {
 		templateUrl: 'views/page-javascript.html',
-//		controller: 'testPageCtrl'
+		controller: 'testPageCtrl'
 	})
     .when('/angular', {
 		templateUrl: 'views/page-angular.html',
-//		controller: 'result.Ctrl'
+		controller: 'result.Ctrl'
+	})
+    .when('/express', {
+		templateUrl: 'views/page-express.html',
+		controller: 'result.Ctrl'
+	})
+    .when('/react', {
+		templateUrl: 'views/page-react.html',
+		controller: 'result.Ctrl'
+	})
+    .when('/databases', {
+		templateUrl: 'views/page-databases.html',
+		controller: 'result.Ctrl'
+	})
+    .when('/jQuery', {
+		templateUrl: 'views/page-jQuery.html',
+		controller: 'result.Ctrl'
 	})
     .when('/node', {
 		templateUrl: 'views/page-node.html',
-//		controller: 'result.Ctrl'
+		controller: 'result.Ctrl'
+	})
+    .when('/git', {
+		templateUrl: 'views/page-git.html',
+		controller: 'result.Ctrl'
+	})
+    .when('/gitHub', {
+		templateUrl: 'views/page-github.html',
+		controller: 'result.Ctrl'
 	})
     .when('/mongo', {
 		templateUrl: 'views/page-mongo.html',
-//		controller: 'result.Ctrl'
+		controller: 'result.Ctrl'
 	})
     .otherwise({ 
         redirectTo: '/home' 
