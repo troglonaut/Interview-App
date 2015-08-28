@@ -15,5 +15,7 @@ app.service('questionService', function ($http, $q) {
         return dif.promise;
     }
     
-    
+    this.getQuestions = function(){
+        return $http.get('/api')
+    }
 });

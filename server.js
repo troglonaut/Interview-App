@@ -40,5 +40,6 @@ app.listen(port, function () {
 
 // EndPoints
 app.get('/api/:lang', questionCtrl.getQuestion);
+//app.get('/api', questionCtrl.getQuestions)
 
 

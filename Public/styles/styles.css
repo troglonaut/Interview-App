@@ -104,29 +104,77 @@ span {
 }
 
 
-/*
-register page
-input[type=text],input[type=password]{
-  width: 200px; 
-  height: 39px; 
-  -webkit-border-radius: 0px 4px 4px 0px/5px 5px 4px 4px; 
-  -moz-border-radius: 0px 4px 4px 0px/0px 0px 4px 4px; 
-  border-radius: 0px 4px 4px 0px/5px 5px 4px 4px; 
-  background-color: #fff; 
-  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
-  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
-  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
-  border: solid 1px #cbc9c9;
-  margin-left: -5px;
-  margin-top: 13px; 
-  padding-left: 10px;
+/*register page*/
+.registerBkng {
+    height: 5em;
+    width: 100%;
+    background-color: #080808;
+    opacity: 0.6;
+    background-color: transparent, #686868;  
 }
 
-hr {
-    color: black;
-    opacity: 0.9;
+.hired {
+    font-size: 1.5em;
+    position: absolute;
+    top: 2%;
+    margin-left: 2%;
 }
-*/
+
+.register {
+    margin-left: 4%;
+}
+
+input {
+    position: absolute;
+    display: inline-block;
+}
+.nameBox {
+    top: 23%;
+    width: 13%;
+    height: 5%;
+}
+
+.emailBox {
+    top: 38%;
+    width: 13%;
+    height: 5%;
+    
+}
+
+.passwordBox {
+    top: 55%;
+    width: 13%;
+    height: 5%;
+    
+    
+}
+
+.regiButton {
+    margin-top: 10%;
+}
+
+.boxName {
+    position: absolute;
+    top: 20%;
+}
+
+.boxEmail {
+    margin-top: 10%;
+}
+
+.boxPass {
+    margin-top: 7.5%;
+}
+
+.backBtn {
+    position: absolute;
+    left: 4%;
+    margin-top: 15%;
+    color: blue;
+}
+
+
+
 
 /*Dashboard page*/
 .navBar {
@@ -167,5 +215,8 @@ a {
 }
 
 /*html question page*/
+.this {
+    color: transparent;
+}
 
 

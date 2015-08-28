@@ -1,5 +1,5 @@
 <div>
-    <h1>Questions</h1>
+    <h1>Questions <span class="this"> - {{thisQuestion + 1}} of {{totalQuestions}}</span></h1>
     
     <p> {{ currentQuestion.question }}</p>
     
@@ -10,4 +10,4 @@
     <input type="radio" name="selected" value="index"> {{ answer }}
 </div>
 
-<button type="button">next</button>
+<button type="button" ng-click="nextProblem()">next</button>

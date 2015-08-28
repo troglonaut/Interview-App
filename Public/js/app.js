@@ -24,8 +24,12 @@ app.config(function ($routeProvider) {
 	}})
     .when('/css', {
 		templateUrl: 'views/page-css.html',
-//		controller: 'registerCtrl'
-	})
+		controller: 'cssCtrl',
+        resolve: {
+            cssQuestions: function (questionService) {
+                return questionService.getQuestion('css')
+        }
+	}})
     .when('/javascript', {
 		templateUrl: 'views/page-javascript.html',
 //		controller: 'testPageCtrl'

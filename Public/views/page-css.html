@@ -1,0 +1,13 @@
+<div>
+    <h1>Questions <span class="this"> - {{thisQuestion + 1}} of {{totalQuestions}}</span></h1>
+    
+    <p> {{ currentQuestion.question }}</p>
+    
+</div>
+
+
+<div  ng-repeat="answer in currentQuestion.multipleChoice">    
+    <input type="radio" name="selected" value="index"> {{ answer }}
+</div>
+
+<button type="button" ng-click="nextProblem()">next</button>
