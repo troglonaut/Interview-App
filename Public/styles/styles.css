@@ -185,8 +185,9 @@ input {
 
 
 
-
-/*Dashboard page*/
+/**/
+/*DASHBOARD PAGE*/
+/**/
 .hiredDash {
     font-size: 1.5em;
     position: absolute;
@@ -202,7 +203,7 @@ input {
 }
 
 .signOut {
-    font-size: 1.3em;
+    font-size: 1em;
     position: absolute;
     right: 2%;
     top: 2%;
@@ -239,39 +240,149 @@ hr {
     left: 5%;
 }
 
-
-/*
-.langBack {
-    display: inline-block;
-    margin-left: 1%;
-    width: 8%;
-    position: absolute;
-    height: 100%;
-    margin-left: 0%;
-    opacity: 0.8;
-    background-color: transparent;
-}
-*/
-
-/*
-.langBar {
-    color: #ffffff;
-    font-weight: 400;
-    list-style-type: none;
-    display: inline-block;
+.express {
+    margin-top: 8%;
+    margin-left: inherit;
 }
 
-.text {
+.picTitle {
+    font-size: 1.3em;
+    margin-top: 10%;
+}
+
+.htmlTitle {
+    margin-left: 7%;
+}
+
+.htmlSub {
+    margin-left: -32%;
+}
+
+.cssTitle {
     margin-left: 10%;
-    margin-top: 15%;
-    word-spacing: 1%;;
 }
-*/
+
+.cssSub {
+    margin-left: -40%;
+}
+
+.javaTitle {
+    margin-left: 5%;
+}
+
+.javaSub {
+    margin-left: -40%;
+}
+
+.mongoTitle {
+    margin-left: 5%;
+}
+
+.mongoSub {
+    margin-left: -33%;
+}
+
+.expTitle {
+    margin-left: 17%;
+}
+
+.expSub {
+    margin-left: -40%;
+    text-align-last: center;
+}
+
+.angTitle {
+    margin-left: 5%;
+}
+
+.angSub {
+    margin-left: -48%;
+}
+
+.nodeTitle {
+    margin-left: 6%;
+}
+
+.nodeSub {
+    margin-left: -48%;
+}
+
+.reactTitle {
+    margin-left: 9%;
+}
+
+.reactSub {
+    margin-left: -45%;
+}
+
+.jqTitle {
+    margin-left: 8%;
+}
+
+.jqSub {
+    margin-left: -50%;
+}
+
+.dataTitle {
+    margin-left: 4%;
+}
+
+.dataSub {
+    margin-left: -48%;
+}
+
+.gitTitle {
+    margin-left: 12%;
+}
+
+.gitSub {
+    margin-left: -50%;
+    text-align-last: center;
+}
+
+.githubTitle {
+    margin-left: 9%;
+}
+
+.hubSub {
+    margin-left: -55%; 
+}
 
 /*HTML QUESTION PAGE*/
 .this {
     color: transparent;
 }
+
+.blueBox {
+    background-color: #1565C0;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.htmlTest {
+    color: #fff;
+    margin-left: 43%;
+    font-size: 1.5em;
+    padding: 1%;
+    text-align: left;
+}
+
+.question {
+    text-align: center;
+    margin: 3% auto 3% auto;
+    
+}
+
+.answers {
+    margin: 1% auto 1% auto;
+    text-align: center;
+}
 /*END OF HTML QUESTION PAGE*/
+
 
 
