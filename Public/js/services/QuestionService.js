@@ -5,6 +5,7 @@ app.service('questionService', function ($http, $q) {
         var dif = $q.defer();
         $http.get('/api/' + lang)
             .then(function(response) {
+            console.log("QuestionService - questions: ", response)
             dif.resolve(response.data)
     // this callback will be called asynchronously
     // when the response is available

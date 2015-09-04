@@ -1,13 +1,31 @@
-<div>
-    <h1>Questions <span class="this"> - {{thisQuestion + 1}} of {{totalQuestions}}</span></h1>
+<div class="registerBkng">
     
-    <p> {{ currentQuestion.question }}</p>
+    <p class="hiredDash"><span>Hired Dashboard</span></p>
+    
+    <a href="#/home" class="signOut"><span>Sign out</span></a>
+    <a href="#/dashboard" class="dashboard"><span>Dashboard</span></a>
+    
+</div>
+
+<div>
+    
+    <div class="blueBox">
+        <p class="htmlTest">CSS Test <span class="this"> - {{thisQuestion + 1}} of {{totalQuestions}}</span></p>
+    </div>
+    
+    <div>
+        <p class="question"><strong>{{ currentQuestion.question }}</strong></p>
+    </div>
     
 </div>
 
 
-<div  ng-repeat="answer in currentQuestion.multipleChoice">    
+<div  ng-repeat="answer in currentQuestion.multipleChoice" class="answers">   
     <input type="radio" name="selected" value="index"> {{ answer }}
 </div>
 
-<button type="button" ng-click="nextProblem()">next</button>
+<div>
+    <button type="button" ng-click="nextProblem()" class="nextBtn btn btn-default btn-lg">next</button>
+    <a href="#/answer" class="linkDiscuss">View Answers and Discussion</a>
+</div>
+

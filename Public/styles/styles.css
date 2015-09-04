@@ -202,6 +202,13 @@ input {
     margin-top: 1%;
 }
 
+.dashboard {
+    font-size: 1em;
+    position: absolute;
+    right: 7%;
+    top: 2%;
+}
+
 .signOut {
     font-size: 1em;
     position: absolute;
@@ -380,9 +387,70 @@ hr {
 
 .answers {
     margin: 1% auto 1% auto;
-    text-align: center;
+    margin-left: 40%;
+    text-align: -webkit-match-parent;
+
 }
-/*END OF HTML QUESTION PAGE*/
+
+input[type="radio"]{
+    margin: 0 -30px;
+    margin-top: 0.2%;
+}
+
+.nextBtn {
+    position: absolute;
+    top: 75%;
+    left: 70%;
+}
+
+.showBtn {
+    position: absolute;
+    top: 80%;
+    left: 70%;
+}
+
+.linkDiscuss {
+    position: absolute;
+    left: 80%;
+    top: 78%;
+}
+/*END OF HTML QUESTION PAGE
+
+/*RESULT PAGE*/
+.congrats {
+    position: absolute;
+    left: 25%;
+    top: 35%;
+}
+
+.scored {
+    position: absolute;
+    left: 25%;
+    top: 40%;
+}
+
+.review {
+    position: absolute;
+    left: 25%;
+    top: 45%;
+}
+
+.line {
+    position: absolute;
+    top: 47%;
+    left: 5%;
+    width: 90%;
+    border: 0;
+    height: 1px;
+    background: #000;
+    opacity: 0.5;
+}
+
+.wrongRight {
+    text-align: center;
+    margin-top: 12%;
+}
+/*END OF RESULT PAGE*/
 
 
 

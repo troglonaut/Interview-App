@@ -14,6 +14,14 @@ app.config(function ($routeProvider) {
 		templateUrl: 'views/page-register.html',
 		controller: 'registerCtrl'
 	})
+    .when('/result', {
+		templateUrl: 'views/page-result.html',
+		controller: 'resultCtrl'
+	})
+    .when('/discussion', {
+		templateUrl: 'views/page-discussion.html',
+		controller: 'discussionCtrl'
+	})
     .when('/html', {
 		templateUrl: 'views/page-html.html',
 		controller: 'htmlCtrl',
@@ -33,6 +41,10 @@ app.config(function ($routeProvider) {
     .when('/javascript', {
 		templateUrl: 'views/page-javascript.html',
 		controller: 'testPageCtrl'
+	})
+    .when('/answer', {
+		templateUrl: 'views/page-answer.html',
+		controller: 'answerCtrl'
 	})
     .when('/angular', {
 		templateUrl: 'views/page-angular.html',

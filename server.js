@@ -28,7 +28,7 @@ app.use('/', cors());
 
 
 // MongoDB
-mongoose.connect('mongodb://localhost/interviewapp-dev');
+mongoose.connect(config.dbconn);
 mongoose.connection.once('connected', function () {
     console.log('Connected to database')
 });
@@ -45,6 +45,5 @@ app.listen(portNum, function () {
 
 // EndPoints
 app.get('/api/:lang', questionCtrl.getQuestion);
-//app.get('/api', questionCtrl.getQuestions)
 
 
