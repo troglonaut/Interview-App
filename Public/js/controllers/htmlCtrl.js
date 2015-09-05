@@ -66,5 +66,14 @@ $scope.onChange = function(idx) {
         //finished to true 
         $scope.finished = true;
     }
+    
+    $scope.answerCheck = function(){
+        if($scope.answer === $scope.question.multipleChoice[question.answer]){
+            return true
+        }
+        else {
+            return false
+        }
+    }
 });
 

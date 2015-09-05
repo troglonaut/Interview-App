@@ -40,7 +40,13 @@
         </div>
         
         <div ng-repeat="question in questions" class="questions question"><strong>{{question.question}}</strong>
-            <ul ng-repeat="answer in question.multipleChoice"><li>&#10003{{ answer }}</li></ul>
+            <ul ng-repeat="answer in question.multipleChoice track by $index">
+                <li>
+                    <span class="x" ng-if="$index === userAnwers[$index].selectedAnswer && $index !== question.answer">Incorrect</span>
+                    <span class="checkMark" ng-if="$index === question.answer && $index === userAnwers[$index].selectedAnswer">&#10003</span>
+                    {{ answer }}
+                </li>
+            </ul>
             <p>Correct Answer: {{question.multipleChoice[question.answer]}}</p>
             <hr class="lines">
         </div>

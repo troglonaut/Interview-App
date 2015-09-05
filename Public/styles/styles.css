@@ -474,8 +474,11 @@ input[type="radio"]{
 }
 /*END OF DISCUSSION PAGE*/
 
-.thingy = {
-    border-color: red;
+.checkMark {
+    color: limegreen;
 }
 
+.x {
+    color: red
+}
 
