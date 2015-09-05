@@ -4,6 +4,7 @@ app.controller('htmlCtrl', function ($scope, htmlQuestions, $location){
     $scope.userAnwers = [];
     
     $scope.questions = htmlQuestions;
+    console.log($scope.questions);
     
     $scope.lastQuestion = false;
     $scope.finished = false;

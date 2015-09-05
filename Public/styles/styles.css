@@ -385,6 +385,13 @@ hr {
     
 }
 
+.questions {
+    margin-top: 7%;
+}
+
+.questionLines {
+}
+
 .answers {
     margin: 1% auto 1% auto;
     margin-left: 40%;
@@ -433,22 +440,31 @@ input[type="radio"]{
     position: absolute;
     left: 25%;
     top: 45%;
+    text-decoration: none;
 }
 
 .line {
     position: absolute;
     top: 47%;
-    left: 5%;
-    width: 90%;
+    left: 25%;
+    width: 50%;
     border: 0;
     height: 1px;
     background: #000;
     opacity: 0.5;
 }
 
+.lines {
+    width: 50%;
+    opacity: 0.5;
+}
+
 .wrongRight {
     text-align: center;
     margin-top: 12%;
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align-last: inherit;
 }
 /*END OF RESULT PAGE*/
 
@@ -458,5 +474,8 @@ input[type="radio"]{
 }
 /*END OF DISCUSSION PAGE*/
 
+.thingy = {
+    border-color: red;
+}
 
 

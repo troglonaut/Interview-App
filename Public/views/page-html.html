@@ -30,7 +30,7 @@
     
 </div>
 
-    <div ng-if="finished">
+    <div ng-if="finished" class='thingy'>
         <div>
             <p class="congrats"><strong>Congratulations - You have completed the HTML Test</strong></p>
             <p class="scored"><strong>You scored - {{questionsCurrect}} out of {{totalQuestions}}</strong></p>
@@ -39,8 +39,10 @@
             <p class="wrongRight">All the questions in the quiz along with their answers are shown below. Your answers are bolded. The correct answers have a green background while the incorrect ones have a red background.</p>
         </div>
         
-        <div ng-repeat="question in questions">{{question.question}} 
-            <div>{{question.multipleChoice}}</div>
+        <div ng-repeat="question in questions" class="questions question"><strong>{{question.question}}</strong>
+            <ul ng-repeat="answer in question.multipleChoice"><li>&#10003{{ answer }}</li></ul>
+            <p>Correct Answer: {{question.multipleChoice[question.answer]}}</p>
+            <hr class="lines">
         </div>
         
     </div>
