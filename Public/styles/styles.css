@@ -406,14 +406,14 @@ input[type="radio"]{
 
 .nextBtn {
     position: absolute;
-    top: 75%;
+    top: 55%;
     left: 70%;
 }
 
 .showBtn {
     position: absolute;
-    top: 80%;
-    left: 70%;
+    top: 45%;
+    left: 46%;
 }
 
 .linkDiscuss {
@@ -421,6 +421,13 @@ input[type="radio"]{
     left: 80%;
     top: 78%;
 }
+/*
+.vertical {
+    vertical-align: baseline;
+}
+*/
+
+
 /*END OF HTML QUESTION PAGE
 
 /*RESULT PAGE*/
@@ -464,7 +471,7 @@ input[type="radio"]{
     margin-top: 12%;
     padding-left: 25%;
     padding-right: 25%;
-    text-align-last: inherit;
+    text-align-last: left;
 }
 /*END OF RESULT PAGE*/
 
@@ -476,9 +483,21 @@ input[type="radio"]{
 
 .checkMark {
     color: limegreen;
+    font-size: 1.5em;
 }
 
 .x {
-    color: red
+    color: red;
+    font-size: 1.8em;
 }
 
+.answerAlign {
+    margin: 1% auto 1% auto;
+    margin-left: 25%;
+    text-align: left;
+}
+
+
+.correctAnswer {
+    margin-top: 3%;
+}

@@ -41,13 +41,13 @@
         
         <div ng-repeat="question in questions" class="questions question"><strong>{{question.question}}</strong>
             <ul ng-repeat="answer in question.multipleChoice track by $index">
-                <li>
-                    <span class="x" ng-if="$index === userAnwers[$index].selectedAnswer && $index !== question.answer">Incorrect</span>
-                    <span class="checkMark" ng-if="$index === question.answer && $index === userAnwers[$index].selectedAnswer">&#10003</span>
+                <li class="answerAlign">
+                    <span class="x" ng-if="$index === userAnwers[$index].selectedAnswer && $index !== question.answer"><strong>&#xff58</strong></span>
+                    <span class="checkMark" ng-if="$index === question.answer && $index === userAnwers[$index].selectedAnswer">&#10004</span>
                     {{ answer }}
                 </li>
             </ul>
-            <p>Correct Answer: {{question.multipleChoice[question.answer]}}</p>
+            <p class="correctAnswer">Correct Answer: {{question.multipleChoice[question.answer]}}</p>
             <hr class="lines">
         </div>
         
